@@ -29,7 +29,10 @@ public class LeapYearTest
     assertThat(LeapYear.isLeapYear(2021), equalTo(false));
     assertThat(LeapYear.isLeapYear(1897), equalTo(false));
     assertThat(LeapYear.isLeapYear(1700), equalTo(false));
+    assertThat(LeapYear.isLeapYear(1500), equalTo(false));
+    assertThat(LeapYear.isLeapYear(-2343221), equalTo(false));
   }
-  }
+
+}
 
 
